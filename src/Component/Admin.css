@@ -1,0 +1,108 @@
+.admin-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.admin-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: brown;
+}
+
+.btn-group {
+  margin-bottom: 20px;
+}
+
+.btn-group button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  background: black;
+  color: cyan;
+  border: 1px solid cyan;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-group button:hover {
+  background: cyan;
+  color: black;
+}
+
+
+.form-box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form-box button {
+  padding: 8px 15px;
+  border: none;
+  background: yellow;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-box button:hover {
+  background: black;
+  color: cyan;
+  border: 1px solid cyan;
+}
+
+.user-list-admin {
+  margin-top: 20px;
+}
+
+.user-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.user-box img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+.user-box h3 {
+  margin: 10px 0 5px;
+}
+
+.user-box button {
+  padding: 6px 12px;
+  margin-right: 10px;
+  border: none;
+  
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-box button:hover {
+  background: black;
+  color: cyan;
+  border: 1px solid cyan;
+}
+
+.edit-btn{
+    background: yellow;
+    cursor: pointer;
+}
+.delete-btn {
+  background: red;
+  color: white ;
+  cursor: pointer;
+}
+
+
+
