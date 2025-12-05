@@ -21,7 +21,7 @@ function Admin() {
 
  
   const fetchUsers = () => {
-    axios.get("http://localhost:7077/api/getallUser")
+    axios.get("https://students-testimonials-backend.onrender.com/api/getallUser")
       .then(res => setUsers(res.data.user))
       .catch(err => console.log(err));
   };
@@ -38,7 +38,7 @@ function Admin() {
   // Add User
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:7077/api/saveUser", form)
+    axios.post("https://students-testimonials-backend.onrender.com/api/saveUser", form)
       .then(() => {
         alert("User Added!");
         setForm({ image: "", name: "", rating: 0, description: "" });
@@ -51,7 +51,7 @@ function Admin() {
   // Update User
   const handleUpdateSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:7077/api/updateUser/${editId}`, form)
+    axios.put(`https://students-testimonials-backend.onrender.com/api/updateUser/${editId}`, form)
       .then(() => {
         alert("User Updated!");
         setForm({ image: "", name: "", rating: 0, description: "" });
@@ -64,7 +64,7 @@ function Admin() {
 
   // Delete User
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:7077/api/deleteUser/${id}`)
+    axios.delete(`https://students-testimonials-backend.onrender.com/api/deleteUser/${id}`)
       .then(() => {
         alert("User Deleted!");
         fetchUsers();

@@ -7,7 +7,7 @@ function Front() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:7077/api/getallUser") 
+    axios.get("https://students-testimonials-backend.onrender.com/api/getallUser") 
       .then(res => {
         console.log(res.data)
         setUsers(res.data.user)
